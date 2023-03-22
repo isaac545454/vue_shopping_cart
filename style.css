@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+main > section.items h4 {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+main > section.items {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    max-width: 700px;
+    min-width: 500px;
+    justify-content: center;
+    
+}
+
+section.items .product {
+    border: 1px solid lightgrey;
+    margin: 6px;
+    flex: 0 0 calc(25% - 24px);
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+
+section.items .product.selected {
+    border: 2px solid rgb(190, 42, 23);
+    padding: 10px;
+
+}
+
+section.items .photo img {
+    max-width: 90px;
+}
+
+section.items .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+section.items  .description .price {
+    font-weight: bold;
+    margin: 4px auto;
+}
+
+section.items  .description .quantity-area {
+    margin: 8px auto;
+    height: 14px;
+}
+
+section.items  .description .quantity-area button {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+section.items  .description .quantity-area .quantity {
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+#sub{
+  background-color:rgb(190, 42, 23);
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+}
+#som{
+    background-color:rgb(15, 131, 44);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+section.summary {
+    margin-left: 25px;
+    border: 2px solid rgb(190, 42, 23);
+    background-color: rgb(020, 025, 025);
+    padding: 20px;
+    min-height: 300px;
+    min-width: 300px;
+    text-align: center;
+}
+
+section.summary table {
+    width: 100%;
+    padding-top: 12px;
+    font-size: 11px;
+    margin: auto;
+}
+
+section.summary table tbody tr:last-of-type th {
+    border-top: 1px solid black;
+    padding-top: 4px;
+}
+
+
+
